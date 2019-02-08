@@ -8,7 +8,7 @@
 
 **2.** Crear un document XML vàlid que contingui les dades que heu triat, o una part. Com a mínim ha d'incloure vint nodes amb informació.
 
-  * He transformat el fitxer **titanic3.xls** amb l'script de Python adjunt: **csv2xml.py**
+  * He transformat el fitxer **titanic3.xls** a **titanic3.css** i amb l'script de Python adjunt: **csv2xml.py** a **titanic3.xml**
 
 **3.** Document .dtd que correspongui a l'XML anterior. L'XML validarà respecte d'aquest DTD.
 
