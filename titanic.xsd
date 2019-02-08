@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"> 
+  
+   
+	<!--Definició Tipus simple -->		
+	<xsd:simpleType name="PclassType">
+		<xsd:restriction base="xsd:integer">
+			  <xsd:minInclusive value="0"/>
+			  <xsd:maxInclusive value="3"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+    <xsd:simpleType name="SexType">
+		<xsd:restriction base="xsd:string">
+		    <xsd:pattern value="male|female"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+   
+   	<xsd:simpleType name="SibspType">
+		<xsd:restriction base="xsd:integer">
+			<xsd:minInclusive value="0"/>
+			<xsd:maxInclusive value="8"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+			
+	<xsd:simpleType name="ParchType">
+		<xsd:restriction base="xsd:integer">
+			<xsd:minInclusive value="0"/>
+			<xsd:maxInclusive value="9"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+						
+	<xsd:simpleType name="EmbarkedType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="C"/>
+			<xsd:enumeration value="S"/>
+			<xsd:enumeration value="Q"/>
+		</xsd:restriction>
+	</xsd:simpleType>					
+						
+						
+   <!-- Definició Tipus Complex -->
+       <xsd:complexType name="PersonType">
+          <xsd:sequence>
+              <xsd:element name="Embarked" type="EmbarkedType"/>
+			  <xsd:element name="Parch" type="ParchType"/>      
+			  <xsd:element name="Sibsp" type="SibspType"/>
+			  <xsd:element name="Sex" type="SexType"/>      
+			  <xsd:element name="Pclass" type="PclassType"/>			   
+			  <xsd:element name="Survived" type="xsd:boolean"/>
+			  <xsd:element name="Name" type="xsd:string"/>						
+			  <xsd:element name="Age" type="xsd:decimal"/>				
+			  <xsd:element name="Ticket" type="xsd:string"/>
+			  <xsd:element name="Fare" type="xsd:decimal"/>
+			  <xsd:element name="Cabin" type="xsd:string"/>				
+			  <xsd:element name="Boat" type="xsd:string"/>
+			  <xsd:element name="Body" type="xsd:string"/>
+			  <xsd:element name="Home.dest" type="xsd:string"/>
+          </xsd:sequence>
+       </xsd:complexType>
+
+
+	<!-- Definició d'element global -->	  
+	  <xsd:element name="Titanic">  
+        <xsd:complexType>  
+            <xsd:sequence>  
+                <xsd:element name="Person" type="PersonType"/>  
+            </xsd:sequence>  
+        </xsd:complexType>  
+    </xsd:element> 
+    
+    
+</xsd:schema>

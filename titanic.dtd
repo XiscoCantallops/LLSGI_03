@@ -1,0 +1,16 @@
+<!ELEMENT titanic (person*)>
+<!ELEMENT person (pclass,survived,name,sex,age?,sibsp,parch,ticket,fare?,cabin?,embarked?,boat?,body?,home.dest?)>
+<!ELEMENT pclass (#PCDATA)>
+<!ELEMENT survived (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT sex (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT sibsp (#PCDATA)>
+<!ELEMENT parch (#PCDATA)>
+<!ELEMENT ticket (#PCDATA)>
+<!ELEMENT fare (#PCDATA)>
+<!ELEMENT cabin (#PCDATA)>
+<!ELEMENT embarked (#PCDATA)>
+<!ELEMENT boat (#PCDATA)>
+<!ELEMENT body (#PCDATA)>
+<!ELEMENT home.dest (#PCDATA)>
