@@ -8,12 +8,12 @@
 
 **2.** Crear un document XML vàlid que contingui les dades que heu triat, o una part. Com a mínim ha d'incloure vint nodes amb informació.
 
-  He trnasformat el fitxer titanic3.xls amb l'script de Python adjunt: csv2xml.py
+  He transformat el fitxer **titanic3.xls** amb l'script de Python adjunt: **csv2xml.py**
 
 **3.** Document .dtd que correspongui a l'XML anterior. L'XML validarà respecte d'aquest DTD.
 
+![Validacio DTD](/Validacio_DTD.png)
+
 **4.** Esquema .xsd corresponent a l'XML. El document XML validarà respecte d'aquest esquema.
 
-(https://github.com/XiscoCantallops/LLSGI_03)
-
-![Logo Github](/GitHub-Mark-64px.png)
+![Validacio XSD](/Validacio_XSDD.png)
