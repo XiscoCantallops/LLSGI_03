@@ -16,4 +16,4 @@
 
 **4.** Esquema .xsd corresponent a l'XML. El document XML validarà respecte d'aquest esquema.
 
-![Validacio XSD](/Validacio_XSDD.png)
+![Validacio XSD](/Validacio_XSD.png)
